@@ -1,0 +1,6 @@
+services:
+  website:
+    build: .
+    ports:
+      - "${PORT:-8088}:80"
+    restart: unless-stopped

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Academic Portfolio</title>
+  <meta name="description" content="A minimal academic portfolio template for sharing your background, projects, publications, and news." />
+  <meta name="author" content="Your Name" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Your Name — Academic Portfolio" />
+  <meta property="og:description" content="Research, projects, and notes from study and life. All content shown is illustrative." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <script>
+    document.documentElement.classList.add('has-js');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion) {
+      document.documentElement.dataset.intro = 'pending';
+    }
+  </script>
+  <link rel="stylesheet" href="assets/styles.css?v=template-1" />
+  <script src="assets/site.js?v=template-1" defer></script>
+  <script src="assets/scroll-reveal.js?v=template-1" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="intro" id="intro" aria-label="Opening introduction">
+    <button class="intro-skip" id="intro-skip" type="button">Skip</button>
+    <div class="intro-copy" id="intro-copy">
+      <p class="intro-kicker">Research · Projects · Ideas</p>
+      <div class="display-name intro-name" id="intro-name">Your Name</div>
+      <p class="intro-role">A space for your work and the things you care about.</p>
+    </div>
+  </div>
+
+  <div class="page-shell" id="page-shell">
+    <header class="site-header" id="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#home" aria-label="Your Name, home">
+          <span class="brand-mark" aria-hidden="true">YN</span>
+          <span>Your Name</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" data-open="false">
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1 class="display-name hero-title" id="hero-title">Your Name</h1>
+
+            <p class="hero-copy hero-bio">
+              I am a graduate student at Example University, interested in thoughtful research and useful software. This is a sample portfolio: replace this introduction with your background, current work, and the questions you enjoy exploring.
+            </p>
+
+            <div class="hero-actions" aria-label="Profile links">
+              <!-- Add your own public CV to assets/cv.pdf, then enable a View CV link here. -->
+              <a class="text-link" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://www.linkedin.com/in/your-username/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="mailto:hello@example.com">Email</a>
+            </div>
+          </div>
+
+          <figure class="portrait-frame">
+            <div class="portrait-image">
+              <img src="assets/profile-placeholder.svg" width="900" height="1200" alt="Abstract portrait placeholder; replace with your own image" />
+            </div>
+            <figcaption>
+              <span>Your photo · Your place</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <header class="section-header">
+            <h2>Projects</h2>
+            <p class="section-intro">Things I’ve built, explored, and shared with the world.</p>
+          </header>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <figure class="project-visual project-visual-site">
+                <img src="assets/project-lab.svg" width="1200" height="675" loading="lazy" decoding="async" alt="Illustrative preview of research lab website" />
+              </figure>
+              <div class="project-card-content">
+                <h3>Research Lab Website</h3>
+                <p class="project-description">A sample website for a research group, bringing together its work, publications, people, and updates.</p>
+                <ul class="project-tags" aria-label="Technologies used"><li>Web design</li><li>JavaScript</li></ul>
+                <div class="project-links">
+                  <a class="project-link" href="https://github.com/your-username/research-lab" target="_blank" rel="noopener"><svg class="project-link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.49c-2.23.49-2.7-.95-2.7-.95-.36-.93-.89-1.18-.89-1.18-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.23 1.87.88 2.33.67.07-.52.28-.88.51-1.08-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.63 7.63 0 0 1 8 4.8c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.72.54 1.45v2.15c0 .21.15.46.55.38A8 8 0 0 0 8 0Z" /></svg><span>View on GitHub</span><span aria-hidden="true">↗</span></a>
+                  <a class="project-link" href="https://example.com/research-lab" target="_blank" rel="noopener"><svg class="project-link-icon project-link-icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" /><path d="M3.5 12h17M12 3.5c2.15 2.3 3.25 5.13 3.25 8.5S14.15 18.2 12 20.5C9.85 18.2 8.75 15.37 8.75 12S9.85 5.8 12 3.5Z" /></svg><span>Visit website</span><span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <figure class="project-visual project-visual-site">
+                <img src="assets/project-workspace.svg" width="1200" height="675" loading="lazy" decoding="async" alt="Illustrative preview of personal workspace" />
+              </figure>
+              <div class="project-card-content">
+                <h3>Personal Workspace</h3>
+                <p class="project-description">A sample application for notes, tasks, and everyday planning. Describe the problem you explored and what you built.</p>
+                <ul class="project-tags" aria-label="Technologies used"><li>Full stack</li><li>Product design</li></ul>
+                <div class="project-links">
+                  <a class="project-link" href="https://github.com/your-username/workspace" target="_blank" rel="noopener"><svg class="project-link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.49c-2.23.49-2.7-.95-2.7-.95-.36-.93-.89-1.18-.89-1.18-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.23 1.87.88 2.33.67.07-.52.28-.88.51-1.08-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.63 7.63 0 0 1 8 4.8c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.72.54 1.45v2.15c0 .21.15.46.55.38A8 8 0 0 0 8 0Z" /></svg><span>View on GitHub</span><span aria-hidden="true">↗</span></a>
+                  <a class="project-link" href="https://example.com/workspace" target="_blank" rel="noopener"><svg class="project-link-icon project-link-icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" /><path d="M3.5 12h17M12 3.5c2.15 2.3 3.25 5.13 3.25 8.5S14.15 18.2 12 20.5C9.85 18.2 8.75 15.37 8.75 12S9.85 5.8 12 3.5Z" /></svg><span>Visit website</span><span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <figure class="project-visual project-visual-site">
+                <img src="assets/project-document.svg" width="1200" height="675" loading="lazy" decoding="async" alt="Illustrative preview of résumé template" />
+              </figure>
+              <div class="project-card-content">
+                <h3>Résumé Template</h3>
+                <p class="project-description">A sample document template with clear typography and a practical layout. Replace this card with one of your own projects.</p>
+                <ul class="project-tags" aria-label="Technologies used"><li>LaTeX</li><li>Typography</li></ul>
+                <div class="project-links">
+                  <a class="project-link" href="https://github.com/your-username/resume-template" target="_blank" rel="noopener"><svg class="project-link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.49c-2.23.49-2.7-.95-2.7-.95-.36-.93-.89-1.18-.89-1.18-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.23 1.87.88 2.33.67.07-.52.28-.88.51-1.08-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.63 7.63 0 0 1 8 4.8c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.72.54 1.45v2.15c0 .21.15.46.55.38A8 8 0 0 0 8 0Z" /></svg><span>View on GitHub</span><span aria-hidden="true">↗</span></a>
+                  <a class="project-link" href="https://example.com/resume-template" target="_blank" rel="noopener"><svg class="project-link-icon project-link-icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" /><path d="M3.5 12h17M12 3.5c2.15 2.3 3.25 5.13 3.25 8.5S14.15 18.2 12 20.5C9.85 18.2 8.75 15.37 8.75 12S9.85 5.8 12 3.5Z" /></svg><span>Visit website</span><span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="publications">
+        <div class="container">
+          <header class="section-header">
+            <h2>Publications</h2>
+            <p class="section-intro">
+              A short description of your research interests. The entries below are placeholders.
+            </p>
+          </header>
+
+          <div class="publication-list">
+            <article class="publication">
+              <div class="publication-meta"><span>2026</span><span>Journal</span></div>
+              <div class="publication-body">
+                <h3><a href="https://example.com/publication" target="_blank" rel="noopener">Example journal article title</a></h3>
+                <p class="authors"><strong>Your Name</strong>, A. Collaborator, and B. Collaborator</p>
+                <p class="venue">Example Journal · Replace with the actual venue and DOI</p>
+              </div>
+            </article>
+            <article class="publication">
+              <div class="publication-meta"><span>2025</span><span>Proceedings</span></div>
+              <div class="publication-body">
+                <h3><a href="https://example.com/publication" target="_blank" rel="noopener">Example conference paper title</a></h3>
+                <p class="authors">A. Collaborator and <strong>Your Name</strong></p>
+                <p class="venue">Example Conference · Replace with the actual venue and paper link</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="news">
+        <div class="container">
+          <header class="section-header">
+            <h2>News</h2>
+            <p class="section-intro">
+              Recent notes from research, study, and life beyond academia.
+            </p>
+          </header>
+
+          <div class="news-list">
+            <article class="news-item news-item-text">
+              <time datetime="2026-09">Sep 2026</time>
+              <div class="news-copy"><h3>A new chapter</h3><p>Use this space for a short update about your studies, work, or a recent milestone. This example intentionally has no image.</p></div>
+            </article>
+            <article class="news-item">
+              <time datetime="2026-06">Jun 2026</time>
+              <div class="news-copy"><h3>A moment worth sharing</h3><p>Add a personal update and a photograph here. Keep it brief and write in your own voice.</p></div>
+              <figure class="news-media"><img src="assets/news-landscape.svg" width="1400" height="1000" loading="lazy" alt="Abstract landscape placeholder" /></figure>
+            </article>
+            <article class="news-item">
+              <time datetime="2026-05">May 2026</time>
+              <div class="news-copy"><h3>Notes from a trip</h3><p>A sample entry with a three-image carousel. Replace these illustrations with your own photographs and update each image description.</p></div>
+              <div class="news-carousel" data-news-carousel role="region" aria-roledescription="carousel" aria-label="Sample travel illustrations">
+                <div class="news-carousel-track">
+                  <figure class="news-media is-active" data-carousel-slide><img src="assets/news-landscape.svg" width="1400" height="1000" loading="lazy" alt="Abstract landscape illustration, slide 1 of 3" /></figure>
+                  <figure class="news-media" data-carousel-slide aria-hidden="true"><img src="assets/news-hills.svg" width="1400" height="1000" loading="lazy" alt="Abstract hills illustration, slide 2 of 3" /></figure>
+                  <figure class="news-media" data-carousel-slide aria-hidden="true"><img src="assets/news-coast.svg" width="1400" height="1000" loading="lazy" alt="Abstract coast illustration, slide 3 of 3" /></figure>
+                  <div class="news-carousel-controls" aria-label="Photo controls">
+                    <button class="carousel-arrow carousel-arrow-previous" type="button" data-carousel-previous aria-label="Show previous photo">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg>
+                    </button>
+                    <button class="carousel-arrow carousel-arrow-next" type="button" data-carousel-next aria-label="Show next photo">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container contact-layout">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2>Connect with me.</h2>
+          </div>
+          <div class="contact-copy">
+          <p>Always happy to chat about research, projects, or anything interesting. Feel free to reach out by email, or open an issue or pull request on GitHub.</p>
+            <a class="button button-primary" href="mailto:hello@example.com">hello@example.com</a>
+            <div class="contact-links">
+              <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <span>© 2026 Your Name</span>
+        <span class="site-credit">A place for your work and ideas.</span>
+        <span>Sample content · Replace before publishing</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
