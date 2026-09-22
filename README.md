@@ -1,8 +1,12 @@
-# Minimal Academic Website
+# Quietfolio
 
 A quiet, responsive starting point for a personal academic website. Share your background, projects, publications, and notes from study and life.
 
 Built with HTML, CSS, and JavaScript. No framework, package installation, or build step is needed for the website itself.
+
+**[See it in use → kody1126.cn](https://kody1126.cn)**
+
+This is the author's personal website, showing a customized version of Quietfolio. Its photographs, CV, and personal content are not included in the template. The screenshot below shows the generic version you get from this repository.
 
 ![Desktop preview of the template using placeholder content](docs/preview.png)
 
@@ -38,6 +42,8 @@ Open [http://localhost:4173](http://localhost:4173). Stop the server with `Ctrl+
 You can also open `index.html` directly, but a local HTTP server is a better deployment preview. Python's development server is for local preview, not public hosting.
 
 ## 2. Publish with GitHub Pages
+
+GitHub Pages is optional. You can use your own domain and Docker/NAS hosting instead; the template repository does not need a `username.github.io` name.
 
 1. Create a repository and upload the template files to its root. Include `index.html`, `assets/`, and the empty `.nojekyll` file.
 2. For a personal homepage, name the repository **`YOUR-USERNAME.github.io`**. For a project site, any repository name works.
