@@ -1,12 +1,12 @@
-# Quietfolio
+# Academic Portfolio
 
-A quiet, responsive starting point for a personal academic website. Share your background, projects, publications, and notes from study and life.
+A minimal personal website template for research, projects, and life.
 
 Built with HTML, CSS, and JavaScript. No framework, package installation, or build step is needed for the website itself.
 
 **[See it in use → kody1126.cn](https://kody1126.cn)**
 
-This is the author's personal website, showing a customized version of Quietfolio. Its photographs, CV, and personal content are not included in the template. The screenshot below shows the generic version you get from this repository.
+This is the author's personal website, showing a customized version of Academic Portfolio. Its photographs, CV, and personal content are not included in the template. The screenshot below shows the generic version you get from this repository.
 
 ![Desktop preview of the template using placeholder content](docs/preview.png)
 
